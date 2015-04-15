@@ -1,0 +1,8 @@
+h1 Current restaurant
+p = @restaurant.name
+p = @restaurant.address
+h3 Reviews:
+- @restaurant.reviews.each_with_index do |review, index|
+  | <p>#{index + 1}. #{review.content} - #{review.rating}</p>
+
+= link_to "Back", restaurants_path
