@@ -1,8 +1,12 @@
-h1 Current restaurant
-p = @restaurant.name
-p = @restaurant.address
-h3 Reviews:
+h2
+  i
+    = @restaurant.name
+p Address: #{@restaurant.address}
+p Category: #{@restaurant.category.capitalize}
+p Phone number: #{@restaurant.phone_number}
+
+h4 Reviews:
 - @restaurant.reviews.each_with_index do |review, index|
-  | <p>#{index + 1}. #{review.content} - #{review.rating}</p>
+  | <p><strong>#{index + 1}.</strong> #{review.content} - #{review.rating}</p>
 
 = link_to "Back", restaurants_path

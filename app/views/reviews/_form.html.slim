@@ -1,6 +1,6 @@
-= form_for([@restaurant, @review]) do |f|
-  = f.label :content
-  = f.text_field :content
-  = f.label :rating
+= bootstrap_form_for([@restaurant, @review]) do |f|
+  / = f.label :content
+  = f.text_area :content, rows: '5'
+  / = f.label :rating
   = f.text_field :rating
   = f.submit

@@ -10,27 +10,32 @@ restaurants_attributes = [
   {
     name:         "Epicure au Bristol",
     address:      "112 rue du Fg St-Honoré 75008 Paris",
-    category:     "french"
+    category:     "french",
+    phone_number: "01 45 36 78 43"
   },
   {
     name:         "La truffière",
     address:      "4 rue Blainville 75005 Paris",
-    category:     "italian"
+    category:     "italian",
+    phone_number: "01 45 36 78 43"
   },
   {
     name:         "Le pré catelan",
     address:      "route de Suresnes 75016 Paris",
-    category:     "belgian"
+    category:     "belgian",
+    phone_number: "01 45 36 78 43"
   },
   {
     name:         "Le pré catelan",
     address:      "route de Suresnes 75016 Paris",
-    category:     "japanese"
+    category:     "japanese",
+    phone_number: "01 45 36 78 43"
   },
     {
     name:         "Le wagon resto",
     address:      "route de Suresnes 13000 Marseille",
-    category:     "japanese"
+    category:     "japanese",
+    phone_number: "01 45 36 78 43"
   }
 ]
 restaurants_attributes.each { |params| Restaurant.create!(params) }

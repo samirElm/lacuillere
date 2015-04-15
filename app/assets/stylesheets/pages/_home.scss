@@ -1,0 +1,46 @@
+.card-green {
+  // padding: 40px;
+  margin: 10px;
+  background: $green;
+  box-shadow: 1px, 2px;
+  transition: all .3s ease;
+  opacity: 0.8;
+  &:hover {
+    transform: scale(1.01);
+    opacity: 1;
+  }
+}
+
+.color-white {
+  color: white;
+  &:hover {
+    color: #D3D3D3;
+  }
+}
+
+.color-green {
+  color: #58C2A8;
+  &:hover {
+    color: #D3D3D3;
+  }
+}
+
+#comment {
+  font-size: 30px;
+}
+
+.padded {
+  padding: 40px;
+}
+.bg-white {
+  background: white;
+}
+.text-center-horizontal{
+  height: 80px;
+  line-height: 80px;
+}
+.container {
+  display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+}

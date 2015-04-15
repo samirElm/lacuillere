@@ -1,8 +1,6 @@
-= form_for(@restaurant) do |f|
-  = f.label :name
+= bootstrap_form_for(@restaurant) do |f|
   = f.text_field :name
-  = f.label :address
   = f.text_field :address
-  = f.label :category
-  = f.text_field :category
+  = f.text_field :phone_number
+  = f.select :category, ["Chinese", "Italian", "Japanese", "French", "Belgian"]
   = f.submit
